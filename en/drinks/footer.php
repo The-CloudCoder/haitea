@@ -1,5 +1,4 @@
 <footer id="footer">
-<?php echo "hai"; ?>
     <div class="footer-container-before">
         <div class="container">
             <div class="row">
