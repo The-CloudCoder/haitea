@@ -6335,9 +6335,9 @@ var prestashop;
     }
     (0,
     _jquery2['default'])(document).ready(function() {
-        prestashop.on('updateFacets', function(param) {
-            makeQuery(param)
-        })
+        // prestashop.on('updateFacets', function(param) {
+        //     makeQuery(param)
+        // })
     });
     /***/
 }
