@@ -200,7 +200,7 @@
         </div>
         <?php include "footer.php"; ?>
     </main> <a class="backtotop" href="#" title="Back to Top" style="display:none;">&nbsp;</a>
-    <script type="text/javascript" src="bottom-68d04f146.js"></script>
+<!--     <script type="text/javascript" src="bottom-68d04f146.js"></script> -->
     <div class="modal fade" id="st_reg_modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
