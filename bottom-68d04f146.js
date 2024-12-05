@@ -1,6 +1,66 @@
-if (typeof prestashop === 'undefined') {
-    window.prestashop = {}; // Define an empty object to avoid errors.
-}
+// Mocking the global `prestashop` object
+window.prestashop = {
+    // Example of common event handling methods
+    on: function(event, callback) {
+        console.log(`Event listener for "${event}" added.`);
+        // Simulating event binding
+        // You can add your custom logic here to handle events
+    },
+
+    emit: function(event, data) {
+        console.log(`Event "${event}" emitted with data:`, data);
+        // Simulating event emission
+        // Custom logic to handle the emitted event
+    },
+
+    // Simulating the "cart" object, for example
+    cart: {
+        getTotalProducts: function() {
+            return 0;  // Return a default value for total products
+        },
+        getProducts: function() {
+            return [];  // Return an empty array as a mock for products
+        },
+        updateQuantity: function(id_product, id_product_attribute, quantity) {
+            console.log(`Product with ID ${id_product} updated with quantity ${quantity}.`);
+        },
+        // You can add other mock methods related to cart functionality here
+    },
+
+    // Simulating the "currency" object, for example
+    currency: {
+        id: 1,  // Default currency ID
+        sign: '$',  // Default currency symbol
+        name: 'USD',  // Default currency name
+        format: 2,  // Default currency format
+        // You can extend this object with more properties if needed
+    },
+
+    // Simulating "translation" for multi-language support
+    translate: function(key, params) {
+        const translations = {
+            'example.key': 'Example translation'
+        };
+        return translations[key] || key;  // Return the translation or the key if not found
+    },
+
+    // Mocking other typical `prestashop` methods and properties
+    // You can add more mock properties here as needed
+
+    // Example: Mocking the `checkout` object
+    checkout: {
+        validateOrder: function() {
+            console.log('Order validated.');
+        },
+        setPaymentMethod: function(paymentMethod) {
+            console.log(`Payment method set to: ${paymentMethod}`);
+        },
+        // Other checkout-related methods can go here
+    },
+
+    // You may also have to mock other services or features used in the copied content
+};
+
 (function(modules) {
     var installedModules = {};
     function __webpack_require__(moduleId) {
