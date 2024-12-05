@@ -17578,25 +17578,25 @@ var prestashop;
         createProductSpin();
         createInputFile();
         coverImage();
-        prestashop.on('updatedProduct', function(event) {
-            createInputFile();
-            coverImage();
-            if (event && event.product_minimal_quantity) {
-                var minimalProductQuantity = parseInt(event.product_minimal_quantity, 10);
-                var quantityInputSelector = '#quantity_wanted';
-                var quantityInput = (0,
-                _jquery2['default'])(quantityInputSelector);
-                quantityInput.trigger('touchspin.updatesettings', {
-                    min: minimalProductQuantity
-                })
-            }
-            prdImgCarousel("#main .product-images");
-            (0,
-            _jquery2['default'])((0,
-            _jquery2['default'])('.tabs .nav-link.active').attr('href')).addClass('active').removeClass('fade');
-            (0,
-            _jquery2['default'])('.js-product-images-modal').replaceWith(event.product_images_modal)
-        });
+        // prestashop.on('updatedProduct', function(event) {
+        //     createInputFile();
+        //     coverImage();
+        //     if (event && event.product_minimal_quantity) {
+        //         var minimalProductQuantity = parseInt(event.product_minimal_quantity, 10);
+        //         var quantityInputSelector = '#quantity_wanted';
+        //         var quantityInput = (0,
+        //         _jquery2['default'])(quantityInputSelector);
+        //         quantityInput.trigger('touchspin.updatesettings', {
+        //             min: minimalProductQuantity
+        //         })
+        //     }
+        //     prdImgCarousel("#main .product-images");
+        //     (0,
+        //     _jquery2['default'])((0,
+        //     _jquery2['default'])('.tabs .nav-link.active').attr('href')).addClass('active').removeClass('fade');
+        //     (0,
+        //     _jquery2['default'])('.js-product-images-modal').replaceWith(event.product_images_modal)
+        // });
         function coverImage() {
             (0,
             _jquery2['default'])('.js-thumb').on('click', function(event) {
@@ -18265,11 +18265,11 @@ var prestashop;
                     }
                     e.stopPropagation()
                 });
-                prestashop.on('responsive update', function(event) {
-                    (0,
-                    _jquery2['default'])('.js-sub-menu').removeAttr('style');
-                    self.toggleMobileMenu()
-                });
+                // prestashop.on('responsive update', function(event) {
+                //     (0,
+                //     _jquery2['default'])('.js-sub-menu').removeAttr('style');
+                //     self.toggleMobileMenu()
+                // });
                 _get(Object.getPrototypeOf(TopMenu.prototype), 'init', this).call(this)
             }
         }, {
