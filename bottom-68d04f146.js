@@ -1,4 +1,4 @@
-import prestashop from prestashop
+var prestashop;
 (function(modules) {
     var installedModules = {};
     function __webpack_require__(moduleId) {
