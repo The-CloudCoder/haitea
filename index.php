@@ -1,4 +1,3 @@
-<?php echo "hai"; ?>
 <!doctype html>
 <html lang="en">
 
