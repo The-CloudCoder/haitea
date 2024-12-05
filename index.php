@@ -1,9 +1,14 @@
+<?php 
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?
 <!doctype html>
 <html lang="en">
 
 <head>
     <title>The Best Alternative to Alcohol | Social Beverages | Hai Tea</title>
-    <?php include "./header.php"; ?>
+    <?php include "header.php"; ?>
 </head>
 
 <body id="index" class="lang-en country-ca currency-cad layout-full-width page-index tax-display-disabled ">
