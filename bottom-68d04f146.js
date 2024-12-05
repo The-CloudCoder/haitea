@@ -1,3 +1,4 @@
+import prestashop from prestashop
 (function(modules) {
     var installedModules = {};
     function __webpack_require__(moduleId) {
@@ -14443,7 +14444,7 @@
     /***/
 }
 ), (function(module, exports) {
-   // module.exports = prestashop;
+    // module.exports = prestashop;
     /***/
 }
 ), (function(module, exports, __webpack_require__) {
